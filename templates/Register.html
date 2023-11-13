@@ -59,13 +59,15 @@
 </form>
 <script>
 function Register() {
+    var username = document.getElementById('FirstName').value;
+    var password = document.getElementById('LastName').value
     var username = document.getElementById('username').value;
     var password = document.getElementById('password').value;
 
     if (username === 'user' && password === 'password') {
         window.location.href = 'login.html';
     } else {
-        window.location.href = 'Register.html';
+        alert ('Your registration is unsucessful')
     }
 
 }
